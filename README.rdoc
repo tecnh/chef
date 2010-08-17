@@ -1,4 +1,4 @@
-= Chef
+= Chef[http://www.opscode.com/chef]
 
 = VIRTUAL PRIVATE CLOUD ON AMAZON:
 
@@ -16,7 +16,7 @@ This version requires a special version of the Fog gem modified to work with the
 
 = DESCRIPTION:
 
-Chef is a configuration management tool designed to bring automation to your entire infrastructure. 
+Chef is a configuration management tool designed to bring automation to your entire infrastructure. Chef's development is sponsored by Opscode[http://www.opscode.com].
 
 The Chef Wiki is the definitive source of user documentation. 
 
