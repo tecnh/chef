@@ -1,5 +1,19 @@
 = Chef
 
+= VIRTUAL PRIVATE CLOUD ON AMAZON:
+
+Chef makes some assumptions that don't work with VPC. This version is an attempt to enable VPC. It's based on 0.9.8 (which was available at the time). It should only be used in an emergency, with any luck OpsCode will merge our fork into a future version. We will update here when that happens. This patch was uploaded to Github on 17 August 2010.
+
+= CHANGES FOR VPC COMPATIBILITY:
+
+* You signify whether you want a Public or Private instance by providing either security groups or a subnet id. Amazon won't accept both.
+* Bootstrap templates are modified to override DNS settings in resolv.conf and hostname in localhost.
+* Parameters passed to ssh sessions to ignore the changing host key settings as strict host key checking quickly becomes a problem when working with Amazon's VPC.
+
+= FOG:
+
+This version requires a special version of the Fog gem modified to work with the VPC. See http://github.com/tecnh/fog
+
 = DESCRIPTION:
 
 Chef is a configuration management tool designed to bring automation to your entire infrastructure. 
