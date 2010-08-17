@@ -24,7 +24,7 @@ require 'rake/gempackagetask'
 require 'rake/rdoctask'
 require './tasks/rspec.rb'
 
-GEM = "chef"
+GEM = "tecnh-chef"
 AUTHOR = "Adam Jacob"
 EMAIL = "adam@opscode.com"
 HOMEPAGE = "http://wiki.opscode.com/display/chef"
@@ -32,7 +32,7 @@ SUMMARY = "A systems integration framework, built to bring the benefits of confi
 
 spec = Gem::Specification.new do |s|
   s.name = GEM
-  s.version = Chef::VERSION
+  s.version = Chef::VERSION + ".vpc"
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
   s.extra_rdoc_files = ["README.rdoc", "LICENSE" ]
